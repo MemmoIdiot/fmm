@@ -1,0 +1,36 @@
+/*.card-img {*/
+/*    width: 100%;*/
+/*    height: 25vw;*/
+/*    object-fit: cover;*/
+/*}*/
+
+.card {
+    position: relative;
+    overflow: hidden;
+}
+
+.card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover .overlay,
+.card:hover .text,
+.card .text {
+    opacity: 1;
+}
+
+.card .text {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: opacity 0.5s;
+}

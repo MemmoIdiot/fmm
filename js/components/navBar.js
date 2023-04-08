@@ -1,0 +1,56 @@
+
+window.addEventListener('DOMContentLoaded', () => {
+    const navbarToggler = document.body.querySelector('.navbar-toggler');
+    [].slice.call(
+        document.querySelectorAll('#navbarResponsive .nav-link')
+    ).map((responsiveNavItem) => {
+        responsiveNavItem.addEventListener('click', () => {
+            if (window.getComputedStyle(navbarToggler).display !== 'none') {
+                navbarToggler.click();
+            }
+        });
+    });
+});
+const nav = document.createElement('nav');
+nav.className = 'navbar navbar-expand-lg fixed-top';
+nav.id = 'mainNav';
+nav.innerHTML = `
+    <div class="container">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+            aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <a href="index.html" class="navbar-brand"><img id="logo" class="navbar-brand" src="assets/FMM_logo.webp" /></a>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item${window.location.pathname === "/index.html" ? ' currentPage' : ''}"><a class="nav-link" href="/index.html">fmm</a></li>
+                <li class="nav-item${window.location.pathname === "/about.html" ? ' currentPage' : ''}"><a class="nav-link" href="/about.html">about</a></li>
+                <li class="nav-item${window.location.pathname === "/collections.html" ? ' currentPage' : ''}"><a class="nav-link" href="/collections.html">collections</a></li>
+                <li class="nav-item${window.location.pathname === "/press.html" ? ' currentPage' : ''}"><a class="nav-link" href="/press.html">press</a></li>
+                <li class="nav-item pe-5${window.location.pathname === "/contactUs.html" ? ' currentPage' : ''}"><a class="nav-link" href="/contactUs.html">contact us</a></li>
+                <li class="nav-item ps-5"><a class="nav-link" href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <style>
+        #logo {
+            max-width: 12.5%;
+        }
+        #mainNav {
+            background: transparent;
+        }
+        .navbar {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+        .nav-item a,.nav-item i{
+            color: #f5f5f5;
+            text-shadow: 1px 1px #050505;
+        }
+        .currentPage { 
+            text-decoration: Underline; 
+        }
+    </style>
+`;
+document.getElementsByTagName('body')[0].appendChild(nav);//sByClassName('row g-0')[0].appendChild(parentDiv);

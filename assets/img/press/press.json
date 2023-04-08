@@ -1,0 +1,83 @@
+[
+    {
+        "img": "IMG_1568.webp",
+        "title": "Man in town",
+        "description": "<i>“Per l’esposizione <b>Collectible Design</b> ospitata dalla Galleria <b>Rossana Orlandi, Francesco Maria Messina</b> ha presentato <b>Pyrite, cabinet composto da cinque moduli di diverse dimensioni assemblati tra loro, che come suggerisce il nome assume le linee irregolari del cristallo di pirite. <b>Un oggetto scultoreo in equilibrio tra funzionalità e decoro..</b>”</i>",
+        "button": {
+            "title": "MAN IN TOWN SEPTEMBER 2021",
+            "link": "https://manintown.com/il-best-of-della-milano-design-week-2021/2021/09/15/"
+        }
+    },
+    {
+        "img": "IMG_1569.webp",
+        "title": "Room Diseno",
+        "description": "Siguiendo una línea similar se encuentra la <b>cajonera deconstruida de Francesco Maria Messina, Pyrite</b>. Con una base pétrea —un rasgo presente en su serie Rissing Ocean—, reproduce la forma maciza del mineral sulfuroso, multiplicando su apariencia cúbica como un guiño a su naturaleza cristalina y a creadores como Mattia Bonetti o Fredrikson Stallard..",
+        "button": {
+            "title": "ROOM DISENO SEPTEMBER 2021",
+            "link": "https://www.roomdiseno.com/paseos-por-milan-design-week-2021-i-collectible-design-en-la-galeria-rossana-orlandi/?fbclid=IwAR0RHF391JTo9x_nuxw2cnJ9yUiXpTfCpxpf33HEQFyWrVQkNK0dkGhtoXo"
+        }
+    },
+    {
+        "img": "IMG_1571.webp",
+        "title": "Nuvo Magazine",
+        "description": "Other designers explicitly express their engagement with environmental issues, as in the mirror inspired by an iceberg that is known to have melted and a table in the shape of the shrinking land mass of Antarctica by <b>Francesco Maria Messina…</b>",
+        "button": {
+            "title": "NUVO MAGAZINE JUNE 2021",
+            "link": "https://nuvomagazine.com/design/venice-design-biennial"
+        }
+    },
+    {
+        "img": "IMG_1871.webp",
+        "title": "VTrend.it",
+        "description": "La soddisfazione e la gioia di poter esporre le mie opere alla “Venice Design Biennial”, è ovviamente incalcolabile, un sogno che si realizza dopo gli indispensabili studi e sacrifici, di questi anni.”",
+        "button": {
+            "title": "Vtrend.it May 2021",
+            "link": ""
+        }
+    },
+    {
+        "img": "Screenshot+2021-11-15+at+13.02.02.webp",
+        "title": "Design Wanted",
+        "description": "Contemporary furniture designer <b><u>Francesco Maria Messina</u></b> paid tribute to Naples with <b>a table inspired by <u>Mount Vesuvius</u>. Plinio resembles volcanic…<b>",
+        "button": {
+            "title": "Design wanted November 2021",
+            "link": "https://designwanted.com/edit-napoli-2021-highlights/"
+        }
+    },
+    {
+        "img": "Screenshot+2021-11-15+at+13.08.12.webp",
+        "title": "Fashion Times",
+        "description": "<i>“È tra i giovani top designer contemporanei che oggi si osservano con grande curiosità e forte interesse perché tracciano – almeno nel suo caso – il loro linguaggio design e architettonico in un mondo che si muove tra reale e digitale.”…</i>",
+        "button": {
+            "title": "FASHION TIMES OCTOBER 2021",
+            "link": "https://www.fashiontimes.it/2021/11/francesco-maria-messina-creativita-puro-reportage-versione-design/?fbclid=IwAR0iSbHmY3aruxHGmCDYutwc2FiFalH_xNCA3JGzikbZPahimcjs34auYww"
+        }
+    },
+    {
+        "img": "Screenshot+2021-11-15+at+13.41.09.webp",
+        "title": "Globe Styles Magazine",
+        "description": "<b>Fuorisalone 2021 Collectible <u>Design</u></b> – In occasione della <i>Milano Design Week 2021 Francesco Maria Messina</i> presenta, all’interno dell’evento Collectible Design da Rossana Orlandi Gallery, <b>Pyrite</b>, un cabinet composto da 5 contenitori di dimensioni diverse e assemblati tra loro..",
+        "button": {
+            "title": "GLOBE STYLES MAG SEPTEMBER 2021",
+            "link": "https://www.globestyles.com/fuorisalone-2021-collectible-design/?fbclid=IwAR1JrALaswU0PhpoIQtE9eP6Y5kpW_NsQ2-LXzaNwmFVbbeBLVsGkzaUVfk"
+        }
+    },
+    {
+        "img": "Screenshot+2021-11-15+at+14.04.55.webp",
+        "title": "Man In Town Magazine",
+        "description": "<i>Un percorso internazionale quello di <b>Francesco Maria Messina</b> che dall’originaria Pisa, cresce a <b>Parigi</b> e si forma professionalmente tra Francia, Stati Uniti, Africa e Mauritius. Per lui il punto d’inizio è sempre rappresentato da una storia, un tema o anche un reportage, da declinare non in modo astratto, bensì concretamente in <b>oggetti, installazioni e complementi d’arredo</b> che riescono a raccontare una storia…</i>",
+        "button": {
+            "title": "Man In Town Magazine May 2021",
+            "link": "https://manintown.com/il-design-artistico-secondo-francesco-maria-messina/2021/05/06/"
+        }
+    },
+    {
+        "img": "Screenshot+2021-11-15+at+14.11.40.webp",
+        "title": "Architectural Digest India",
+        "description": "<i>The Venice Design Biennial is back after a year’s break for its third edition. One of the most prestigious design exhibitions in the world, the Venice Design Biennial is open to the public from till June 27th, 2021, alongside the first month of the Architecture Biennale.</i>",
+        "button": {
+            "title": "AD India may 2021",
+            "link": ""
+        }
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "img": "FMM_FOSSILIA_COLLECTION/FMM_FOSSILIA_scortea/photos/FMM_fossilia_scortea 017.webp",
+        "text": "scortea",
+        "color": [
+            152,
+            118,
+            84
+        ]
+    },
+    {
+        "img": "FMM_MINERALIA_COLLECTION/FMM_MINERALIA_cortex/photos/FMM-15.webp",
+        "text": "cortex",
+        "color": [
+            210,
+            210,
+            210
+        ]
+    },
+    {
+        "img": "FMM_MINERALIA_COLLECTION/FMM_MINERALIA_rosae/photos/FMM_mineralia_rosarosae2 03.webp",
+        "text": "rosae",
+        "color": [
+            210,
+            210,
+            210
+        ]
+    },
+    {
+        "img": "FMM_MINERALIA_COLLECTION/FMM_MINERALIA_strata/photos/FMM_mineralia_strata_bronze3.webp",
+        "text": "strata",
+        "color": [
+            210,
+            210,
+            210
+        ]
+    },
+    {
+        "img": "FMM_GLACIES_COLLECTION/FMM_GLACIES_B-15a_MIRROR/documents/Photos/FMM_glacies_b15a 001.webp",
+        "text": "glacies",
+        "color": [
+            5,
+            71,
+            171
+        ]
+    }
+]
