@@ -7,9 +7,9 @@ footerComponent.innerHTML = `
             <a href="/index.html"><img src="assets/FMM_logo.webp" alt="Brand" class="img-fluid" id="footerLogo"></a>
         </div>
         <div class="col-12 col-md text-center my-3 ">
-            <a href="https://www.facebook.com"><i class="fab fa-facebook fa-lg mx-3 text-dark"></i></a>
+            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f fa-lg mx-3 text-dark"></i></a>
             <a href="https://www.instagram.com"><i class="fab fa-instagram fa-lg mx-3 text-dark"></i></a>
-            <a href="https://www.linkedin.com"><i class="fab fa-linkedin fa-lg mx-3 text-dark"></i></a>
+            <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin-in fa-lg mx-3 text-dark"></i></a>
             <a href="mailto:info@example.com"><i class="fas fa-envelope fa-lg mx-3 text-dark"></i></a>
         </div>
         <div class="col-12 col-md-auto text-center">
@@ -20,7 +20,7 @@ footerComponent.innerHTML = `
     </div>
     <style>
         #footerLogo{
-            max-width: 12.5%;
+            max-width: 10%;
         }
     </style>`;
 

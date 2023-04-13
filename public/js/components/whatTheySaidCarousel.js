@@ -12,4 +12,4 @@ function populateCarousel(title, text, active) {
 
 fetch('assets/img/press/press.json')
     .then(response => response.json())
-    .then(data => data.slice(0, 4).forEach((carouselOjb, i) => populateCarousel(carouselOjb.title, carouselOjb.description, i === 0 ? 'active' : '')));
+    .then(data => data.forEach((carouselOjb, i) => populateCarousel(carouselOjb.title, carouselOjb.description, i === 0 ? 'active' : '')));
