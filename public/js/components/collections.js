@@ -21,9 +21,9 @@ function getCarouselContent(piece) {
         const activated = i === 0 ? ' class="active" aria-current="true"' : '';
         carouselIndicators += `<button type="button" data-bs-target="#carousel" data-bs-slide-to="${i}"${activated} aria-label="Slide ${i}"></button>${divClosed}`;
         carsouselContent += `
-        <div style="height: 360px;" class="carousel-item${i === 0 ? ' active' : ''}" data-bs-interval="2000">
+        <div style="height: 400px;" class="carousel-item${i === 0 ? ' active' : ''}" data-bs-interval="2000">
             <div class="d-flex justify-content-center">
-                <a href="${imgPath}"><img style="height: 360px;" src="${imgPath}" class="d-block" alt="${pic}"></a>
+                <a href="${imgPath}"><img style="height: 400px;" src="${imgPath}" class="d-block" alt="${pic}"></a>
             </div>
         </div>${divClosed}`;
         carouselThumbnails += `
@@ -66,7 +66,7 @@ function getPieceDetail(piece, collectionColor) {
         <div class="col-sm-6">
             <div class="card border-0" style="background-color: rgba(${collectionColor.join(', ')}, 0.35);">
                 <div class="card-body">
-                    <img src="assets/FMM_logo.webp" class="card-img-top" />
+                    <!--<img src="assets/FMM_logo.webp" class="card-img-top" />-->
                     <div class="card-text">
                         ${piece.specifics}
                     </div>
@@ -91,7 +91,7 @@ function collectionClick(event, collections) {
             const carousel = document.createElement('div');
             carousel.className = 'carousel carousel-dark slide';
             carousel.id = 'carousel';
-            carousel.style = 'height:360px;'
+            carousel.style = 'height:400px;'
             const piece = findCollectionElement(collection.pieces, pieceName);
             carousel.innerHTML = getCarouselContent(piece);
             document.getElementById('collections').appendChild(carousel);

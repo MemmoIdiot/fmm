@@ -1,2 +1,3 @@
 giustificare testi
 togliere vTrend
+riquadri delle specifiche dei pezzi della solita altezza
