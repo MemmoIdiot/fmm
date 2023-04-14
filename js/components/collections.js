@@ -55,7 +55,7 @@ function getPieceDetail(piece, collectionColor) {
     pieceDetail.className = 'row m-5';
     pieceDetail.innerHTML = `
         <div class="col-sm-6 mb-3 mb-sm-0">
-            <div class="card border-0" style="background-color: rgba(${collectionColor.join(', ')}, 0.35); text-align: justify;">
+            <div class="card border-0 h-100" style="background-color: rgba(${collectionColor.join(', ')}, 0.35); text-align: justify;">
                 <div class="card-body">
                     <div class="card-text">
                         ${piece.description}
@@ -64,7 +64,7 @@ function getPieceDetail(piece, collectionColor) {
             </div>
         </div>
         <div class="col-sm-6">
-            <div class="card border-0" style="background-color: rgba(${collectionColor.join(', ')}, 0.35);">
+            <div class="card border-0 h-100" style="background-color: rgba(${collectionColor.join(', ')}, 0.35);">
                 <div class="card-body">
                     <!--<img src="assets/FMM_logo.webp" class="card-img-top" />-->
                     <div class="card-text">
