@@ -12,4 +12,8 @@ function populateCarousel(title, text, active) {
 
 fetch('assets/img/press/press.json')
     .then(response => response.json())
-    .then(data => data.forEach((carouselOjb, i) => populateCarousel(carouselOjb.title, carouselOjb.description, i === 0 ? 'active' : '')));
+    .then(data => data.filter(
+        article => article.title.toLowerCase().trim() != 'vtrend'
+    ).forEach((article, i) => populateCarousel(
+        article.title, article.description, i === 0 ? 'active' : ''))
+    );
