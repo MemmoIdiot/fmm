@@ -13,7 +13,7 @@ function populateCarousel(title, text, active) {
 fetch('assets/img/press/press.json')
     .then(response => response.json())
     .then(data => data.filter(
-        article => article.title.toLowerCase().trim() != 'vtrend'
+        article => article.title.toLowerCase().trim() != 'vtrend.it'
     ).forEach((article, i) => populateCarousel(
         article.title, article.description, i === 0 ? 'active' : ''))
     );
