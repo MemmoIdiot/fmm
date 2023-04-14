@@ -22,11 +22,11 @@ nav.innerHTML = `
         <a href="index.html" class="navbar-brand"><img id="logo" class="navbar-brand" src="assets/FMM_logo.webp" /></a>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item${window.location.pathname === "/index.html" ? ' currentPage' : ''}"><a class="nav-link" href="/index.html">fmm</a></li>
-                <li class="nav-item${window.location.pathname === "/about.html" ? ' currentPage' : ''}"><a class="nav-link" href="/about.html">about</a></li>
-                <li class="nav-item${window.location.pathname === "/collections.html" ? ' currentPage' : ''}"><a class="nav-link" href="/collections.html">collections</a></li>
-                <li class="nav-item${window.location.pathname === "/press.html" ? ' currentPage' : ''}"><a class="nav-link" href="/press.html">press</a></li>
-                <li class="nav-item pe-5${window.location.pathname === "/contactUs.html" ? ' currentPage' : ''}"><a class="nav-link" href="/contactUs.html">contact us</a></li>
+                <li class="nav-item${window.location.pathname === "index.html" ? ' currentPage' : ''}"><a class="nav-link" href="index.html">fmm</a></li>
+                <li class="nav-item${window.location.pathname === "about.html" ? ' currentPage' : ''}"><a class="nav-link" href="about.html">about</a></li>
+                <li class="nav-item${window.location.pathname === "collections.html" ? ' currentPage' : ''}"><a class="nav-link" href="collections.html">collections</a></li>
+                <li class="nav-item${window.location.pathname === "press.html" ? ' currentPage' : ''}"><a class="nav-link" href="press.html">press</a></li>
+                <li class="nav-item pe-5${window.location.pathname === "contactUs.html" ? ' currentPage' : ''}"><a class="nav-link" href="contactUs.html">contact us</a></li>
                 <li class="nav-item ps-5"><a class="nav-link" href=""><i class="fa-brands fa-instagram"></i></a></li>
                 <li class="nav-item"><a class="nav-link" href=""><i class="fa-brands fa-facebook-f"></i></a></li>
                 <li class="nav-item"><a class="nav-link" href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
