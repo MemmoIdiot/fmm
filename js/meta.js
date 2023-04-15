@@ -43,12 +43,12 @@ base.setAttribute(
 
 [
     metaCharset,
+    base,
     metaCompat,
     metaViewport,
     linkIcon,
     metaDescription,
     linkBootstrap,
     linkFontAwesome,
-    linkCustom,
-    base
+    linkCustom
 ].forEach(metaTag => head.appendChild(metaTag));
