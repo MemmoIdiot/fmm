@@ -40,7 +40,6 @@ base.setAttribute(
         ? ''
         : '/fmm'
 );
-base.setAttribute('target', '_self');
 
 [
     metaCharset,
