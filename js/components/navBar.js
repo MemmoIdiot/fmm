@@ -1,16 +1,4 @@
 
-window.addEventListener('DOMContentLoaded', () => {
-    const navbarToggler = document.body.querySelector('.navbar-toggler');
-    [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
-    ).map((responsiveNavItem) => {
-        responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click();
-            }
-        });
-    });
-});
 const nav = document.createElement('nav');
 nav.className = 'navbar navbar-expand-lg fixed-top';
 nav.id = 'mainNav';
@@ -22,8 +10,8 @@ nav.innerHTML = `
         <a href="index.html" class="navbar-brand"><img id="logo" alt="logo" class="navbar-brand" src="assets/FMM_logo.webp" /></a>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item${window.location.pathname === "index.html" ? ' currentPage' : ''}"><a class="nav-link" href="index.html">fmm</a></li>
-                <li class="nav-item${window.location.pathname === "about.html" ? ' currentPage' : ''}"><a class="nav-link" href="about.html">about</a></li>
+                <li class="nav-item${window.location.pathname === "index.html" ? ' currentPage' : ''}"><a class="nav-link" href="index.html">home</a></li>
+                <li class="nav-item${window.location.pathname === "about.html" ? ' currentPage' : ''}"><a class="nav-link" href="about.html">fmm</a></li>
                 <li class="nav-item${window.location.pathname === "collections.html" ? ' currentPage' : ''}"><a class="nav-link" href="collections.html">collections</a></li>
                 <li class="nav-item${window.location.pathname === "press.html" ? ' currentPage' : ''}"><a class="nav-link" href="press.html">press</a></li>
                 <li class="nav-item pe-5${window.location.pathname === "contactUs.html" ? ' currentPage' : ''}"><a class="nav-link" href="contactUs.html">contact us</a></li>
@@ -45,6 +33,10 @@ navStyle.innerHTML = `
     .navbar {
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
+        transition: transform 0.3s ease-in-out;
+    }
+    .navbar-hidden{
+        transform: translateY(-100%);
     }
     .nav-item a,.nav-item i{
         color: #f5f5f5;
@@ -55,3 +47,14 @@ navStyle.innerHTML = `
     }`;
 document.getElementsByTagName('head')[0].appendChild(navStyle);
 document.getElementsByTagName('body')[0].appendChild(nav);
+
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.querySelector('.navbar').classList.remove('navbar-hidden');
+    } else {
+        document.querySelector('.navbar').classList.add('navbar-hidden');
+    }
+    prevScrollpos = currentScrollPos;
+}
