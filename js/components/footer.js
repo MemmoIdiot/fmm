@@ -18,7 +18,7 @@ footerComponent.innerHTML = `
         </div>
     </div>
     </div>`;
-const footerStyle = createElement('style');
+const footerStyle = document.createElement('style');
 footerStyle.innerHTML = `
 #footerLogo{
     max-width: 10%;
