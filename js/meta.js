@@ -33,6 +33,14 @@ const linkCustom = document.createElement('link');
 linkCustom.setAttribute('href', 'css/custom.css');
 linkCustom.setAttribute('rel', 'stylesheet');
 
+const base = document.createElement('base');
+linkCustom.setAttribute(
+    'href',
+    ['localhost', '127.0.0.1'].includes(window.location.hostname)
+        ? ''
+        : '/fmm'
+);
+
 [
     metaCharset,
     metaCompat,
@@ -41,7 +49,6 @@ linkCustom.setAttribute('rel', 'stylesheet');
     metaDescription,
     linkBootstrap,
     linkFontAwesome,
-    linkCustom
+    linkCustom,
+    base
 ].forEach(metaTag => head.appendChild(metaTag));
-
-
