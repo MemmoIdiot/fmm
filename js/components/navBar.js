@@ -19,7 +19,7 @@ nav.innerHTML = `
         <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
             aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <a href="index.html" class="navbar-brand"><img id="logo" class="navbar-brand" src="assets/FMM_logo.webp" /></a>
+        <a href="index.html" class="navbar-brand"><img id="logo" alt="logo" class="navbar-brand" src="assets/FMM_logo.webp" /></a>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item${window.location.pathname === "index.html" ? ' currentPage' : ''}"><a class="nav-link" href="index.html">fmm</a></li>
@@ -32,25 +32,26 @@ nav.innerHTML = `
                 <li class="nav-item"><a class="nav-link" href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
             </ul>
         </div>
-    </div>
-    <style>
-        #logo {
-            max-width: 12.5%;
-        }
-        #mainNav {
-            background: transparent;
-        }
-        .navbar {
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
-        }
-        .nav-item a,.nav-item i{
-            color: #f5f5f5;
-            text-shadow: 1px 1px #050505;
-        }
-        .currentPage { 
-            text-decoration: Underline; 
-        }
-    </style>
-`;
-document.getElementsByTagName('body')[0].appendChild(nav);//sByClassName('row g-0')[0].appendChild(parentDiv);
+    </div>`;
+
+const navStyle = document.createElement('style');
+navStyle.innerHTML = `
+    #logo {
+        max-width: 12.5%;
+    }
+    #mainNav {
+        background: transparent;
+    }
+    .navbar {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .nav-item a,.nav-item i{
+        color: #f5f5f5;
+        text-shadow: 1px 1px #050505;
+    }
+    .currentPage { 
+        text-decoration: Underline; 
+    }`;
+document.getElementsByTagName('head')[0].appendChild(navStyle);
+document.getElementsByTagName('body')[0].appendChild(nav);

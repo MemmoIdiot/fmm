@@ -34,12 +34,13 @@ linkCustom.setAttribute('href', 'css/custom.css');
 linkCustom.setAttribute('rel', 'stylesheet');
 
 const base = document.createElement('base');
-linkCustom.setAttribute(
+base.setAttribute(
     'href',
     ['localhost', '127.0.0.1'].includes(window.location.hostname)
         ? ''
         : '/fmm'
 );
+base.setAttribute('target', '_self');
 
 [
     metaCharset,

@@ -17,11 +17,11 @@ footerComponent.innerHTML = `
         </div>
         </div>
     </div>
-    </div>
-    <style>
-        #footerLogo{
-            max-width: 10%;
-        }
-    </style>`;
-
+    </div>`;
+const footerStyle = createElement('style');
+footerStyle.innerHTML = `
+#footerLogo{
+    max-width: 10%;
+}`;
+document.getElementsByTagName('head')[0].appendChild(footerStyle);
 document.getElementsByTagName('body')[0].appendChild(footerComponent);
