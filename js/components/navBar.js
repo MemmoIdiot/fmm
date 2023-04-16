@@ -15,9 +15,9 @@ nav.innerHTML = `
                 <li class="nav-item${window.location.pathname === "collections.html" ? ' currentPage' : ''}"><a class="nav-link" href="collections.html">collections</a></li>
                 <li class="nav-item${window.location.pathname === "press.html" ? ' currentPage' : ''}"><a class="nav-link" href="press.html">press</a></li>
                 <li class="nav-item pe-5${window.location.pathname === "contactUs.html" ? ' currentPage' : ''}"><a class="nav-link" href="contactUs.html">contact us</a></li>
-                <li class="nav-item ps-5"><a class="nav-link" href=""><i class="fa-brands fa-instagram"></i></a></li>
-                <li class="nav-item"><a class="nav-link" href=""><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li class="nav-item"><a class="nav-link" href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li class="nav-item ps-5"><a class="nav-link" href="${socialLinks.instagram}"><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="${socialLinks.facebook}"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="${socialLinks.linkedin}"><i class="fa-brands fa-linkedin-in"></i></a></li>
             </ul>
         </div>
     </div>`;

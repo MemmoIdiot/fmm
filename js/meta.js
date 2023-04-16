@@ -52,3 +52,9 @@ base.setAttribute(
     linkFontAwesome,
     linkCustom
 ].forEach(metaTag => head.appendChild(metaTag));
+
+const socialLinks = {
+    facebook: 'https://www.facebook.com/FrancescoMessinaDesign',
+    instagram: 'https://www.instagram.com/fmm_d_e_s_i_g_n/',
+    linkedin: 'https://www.linkedin.com/company/fmm-design/'
+}
