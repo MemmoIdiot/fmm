@@ -49,12 +49,10 @@ document.getElementsByTagName('head')[0].appendChild(navStyle);
 document.getElementsByTagName('body')[0].appendChild(nav);
 
 let prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
+window.onscroll = () => {
     let currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-        document.querySelector('.navbar').classList.remove('navbar-hidden');
-    } else {
-        document.querySelector('.navbar').classList.add('navbar-hidden');
-    }
+    prevScrollpos > currentScrollPos
+        ? document.querySelector('.navbar').classList.remove('navbar-hidden')
+        : document.querySelector('.navbar').classList.add('navbar-hidden');
     prevScrollpos = currentScrollPos;
 }
