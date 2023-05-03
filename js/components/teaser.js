@@ -3,7 +3,7 @@ function teaser(img, text, rgbColor) {
     const teaserElement = document.createElement('div');
     teaserElement.className = 'card border-0';
     teaserElement.innerHTML = ` 
-    <img src="assets/img/collections/${img}" style="object-fit: cover; object-position: center;" class="card-img img-fluid h-100 mw-100" alt="${img}">
+    <img src="assets/img/collections/${img.replace(' ', '%20')}" style="object-fit: cover; object-position: center;" class="card-img img-fluid h-100 mw-100" alt="${img}">
     <a href="collections.html" class="overlay" style="text-decoration:none; background-color: rgba(${rgbColor.join(', ')}, 0.35);">
         <div class="text">${text}</div>
     </a>`;

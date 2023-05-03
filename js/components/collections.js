@@ -3,7 +3,7 @@ function createCollectionElement(img, title, collectionColor) {
     collectionElement.className = 'col';
     collectionElement.innerHTML = `
         <div class="card collectionElement">
-            <img style="width: 100%; height: 25vw; object-fit: cover;" src="assets/img/collections/${img}" class="card-img" alt="${img}">
+            <img style="width: 100%; height: 25vw; object-fit: cover;" src="assets/img/collections/${img.replace(' ', '%20')}" class="card-img" alt="${img}">
             <div class="overlay" style="background-color: rgba(${collectionColor.join(', ')}, 0.35);">
                 <div class="text" id=${title}>${title}</div>
             </div>
