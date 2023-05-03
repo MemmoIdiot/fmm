@@ -19,7 +19,11 @@ linkIcon.setAttribute('href', 'assets/FMM_logo.webp');
 
 const metaDescription = document.createElement('meta');
 metaDescription.setAttribute('name', 'description');
-metaDescription.setAttribute('content', '');
+metaDescription.setAttribute('content', 'Discover exquisite furniture design by renowed designer Francesco Maria Messina. Our Collection features sleek and modern pieces that elevate any space. Take a look to our unique creation, perfect for each enviroments.');
+
+const metaKeywords = document.createElement('meta');
+metaKeywords.setAttribute('name', 'keywords');
+metaKeywords.setAttribute('content', 'designer furniture, modern furniture, contemporary furniture, office furniture, home furniture, seating, tables, storage, decor')
 
 const linkBootstrap = document.createElement('link');
 linkBootstrap.setAttribute('href', 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css');
