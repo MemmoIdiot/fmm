@@ -22,7 +22,7 @@ metaDescription.setAttribute('name', 'description');
 metaDescription.setAttribute('content', '');
 
 const linkBootstrap = document.createElement('link');
-linkBootstrap.setAttribute('href', 'vendor/bootstrap.min.css');
+linkBootstrap.setAttribute('href', 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css');
 linkBootstrap.setAttribute('rel', 'stylesheet');
 
 const linkFontAwesome = document.createElement('link');
